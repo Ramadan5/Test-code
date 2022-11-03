@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	int n = get_int("Number? ");
+	int n = get_int("What's the number? ");
 	if (n % 2 == 0)
 	{
 		printf("This is an even number\n");
