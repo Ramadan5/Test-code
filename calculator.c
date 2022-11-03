@@ -5,13 +5,21 @@ int main(void)
 {
     int x = get_int("x: ");
     int y = get_int("y: ");
-    char c = get_char("Do you want to sum? ");
-    if (c == 'Y')
+    char c = get_char("What's the operation you're looking for? ");
+    if (c == '+')
     {
         printf("%d\n", x + y);
     }
-    else if (c == 'N')
+    else if (c == '-')
     {
         printf("%d\n", x - y);
+    }
+    else if (c == '*')
+    {
+        printf("%d\n", x * y);
+    }
+    else if (c == '/')
+    {
+        printf("%d\n", x / y);
     }
 }
