@@ -17,7 +17,5 @@ int main(void)
         j = j + scores[i];
     }
 
-    printf("%.2f", (float) j / n);
-
-    printf("\n");
+    printf("%.2f\n", (float) j / n);
 }
