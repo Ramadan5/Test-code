@@ -10,7 +10,6 @@ int main(void)
     for (i = 0; i < n; i++)
     {
         scores[i] = get_int ("What's the score? ");
-
     }
     
     for (i = 0; i < n; i++)
