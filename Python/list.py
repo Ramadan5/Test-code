@@ -21,3 +21,6 @@ def which_city(i):
 
 
 print(cities[which_city(i = input ("What's the first letter of your city? "))])
+
+
+print(cities)
