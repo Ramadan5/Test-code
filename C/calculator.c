@@ -22,4 +22,8 @@ int main(void)
     {
         printf("%f\n", x / y);
     }
+       else if (c == '%')
+    {
+        printf("%d\n", (int) x % (int) y);
+    }
 }
