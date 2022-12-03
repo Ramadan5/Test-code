@@ -5,7 +5,7 @@ def car_wash(i):
     if (i == 12):
         print ("Thank you for choosing our premium car wash service!")
 
-    if (i == 6):
+    elif (i == 6):
         print ("Thank you for choosing our standard car wash service!")
 
     print ("Hope to see you again!")

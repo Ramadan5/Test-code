@@ -4,19 +4,19 @@ def calculator (x = int (input ("What is the value of x? ")), y = int (input ("W
     if (n == '+'):
         print (f'{x} + {y} = {x + y}')
     
-    if (n == '-'):
+    elif (n == '-'):
         print (f'{x} - {y} = {x - y}')
 
-    if (n == '*'):
+    elif (n == '*'):
         print (f'{x} * {y} = {x * y}')
     
-    if (n == '/'):
+    elif (n == '/'):
         print (f'{x} / {y} = {x / y}')
 
-    if (n == '%'):
+    elif (n == '%'):
         print (f'{x} / {y} = {x % y}')
 
-    if (n == '**'):
+    elif (n == '**'):
         print (f'{x} / {y} = {x ** y}')
 
 
