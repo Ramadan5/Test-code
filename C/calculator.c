@@ -1,29 +1,49 @@
 #include <cs50.h>
 #include <stdio.h>
 
+void calculator ();
+
 int main(void)
 {
+    calculator ();
+}
+
+void calculator ()
+{
+    char i;
     float x = get_float ("x: ");
     float y = get_float ("y: ");
-    char c = get_char ("What's the operation you're looking for? ");
+    char c = get_char ("What operation are looking for? ");
+
     if (c == '+')
-    {
-        printf("%f\n", x + y);
-    }
-    else if (c == '-')
-    {
-        printf("%f\n", x - y);
-    }
-    else if (c == '*')
-    {
-        printf("%f\n", x * y);
-    }
-    else if (c == '/')
-    {
-        printf("%f\n", x / y);
-    }
-       else if (c == '%')
-    {
-        printf("%d\n", (int) x % (int) y);
-    }
+        {
+            // printf("%f ", x);
+            // printf("+ ");
+            // printf("%f ", y);
+            // printf("= ");
+            printf("%f %s %f %s %f\n", x, "+", y, "=", x + y);
+        }
+        else if (c == '-')
+        {
+            printf("%f %s %f %s %f\n", x, "-", y, "=", x - y);
+        }
+        else if (c == '*')
+        {
+            printf("%f %s %f %s %f\n", x, "*", y, "=", x * y);
+        }
+        else if (c == '/')
+        {
+            printf("%f %s %f %s %f\n", x, "/", y, "=", x / y);
+        }
+        else if (c == '%')
+        {
+            printf("%d %s %d %s %d\n", (int) x, "%", (int) y, "=", (int) x % (int) y);
+        }
+
+    i = get_char ("Would you like another calculation? (Y/N) "); 
+
+    if (i == 'Y')
+        calculator ();
+    else
+        return;
 }
