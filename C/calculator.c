@@ -10,7 +10,6 @@ int main(void)
 
 void calculator ()
 {
-    char i;
     float x = get_float ("x: ");
     float y = get_float ("y: ");
     char c = get_char ("What operation are looking for? ");
@@ -40,7 +39,7 @@ void calculator ()
             printf("%d %s %d %s %d\n", (int) x, "%", (int) y, "=", (int) x % (int) y);
         }
 
-    i = get_char ("Would you like another calculation? (Y/N) "); 
+    char i = get_char ("Would you like another calculation? (Y/N) "); 
 
     if (i == 'Y')
         calculator ();
