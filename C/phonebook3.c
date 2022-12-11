@@ -12,6 +12,7 @@ person;
 
 int main(int argc, string argv[])
 {
+    string x;
     person people[2];
 
     people[0].name = "Muhammad";
@@ -20,7 +21,15 @@ int main(int argc, string argv[])
     people[1].name = "Hesham";
     people[1].number = "+20106-8277-428";
 
-    string x = argv[1];
+    if (argc == 1)
+    {
+        x = get_string("Who are you looking for? ");
+    }
+    else
+    {
+        x = argv[1];
+    }
+
     x[0] = toupper(x[0]);
 
     for (int i = 0; i < 2; i++)
