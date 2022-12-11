@@ -3,20 +3,14 @@
 
 int main(void)
 {
-    int n;
-
-    do
-    {
-        n = get_int ("How many squares? ");
-    }
-    while (n < 1);
+    int n = get_int ("How many bricks to start with? ");
 
     for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
+    {   
+        for (int j = 0; j < i + 1; j++)
         {
             printf("#");
         }
         printf("\n");
-    }
+    }   
 }
