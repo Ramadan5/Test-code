@@ -1,14 +1,9 @@
-# city1 = 'Cairo'
-# city2 = 'Giza'
-# city3 = 'Alex'
-# city4 = 'Mansoura'
-
-cities =  [
+cities = [
     'Cairo', 'Giza', 'Alex', 'Mansoura',
 ]
 
 
-def which_city(i):
+def which_city(i = input ("What's the first letter of your city? ")):
     
     if (i == 'C'):
         return 0
@@ -20,7 +15,7 @@ def which_city(i):
         return 3
 
 
-print(cities[which_city(i = input ("What's the first letter of your city? "))])
+print(cities[which_city()])
 
 
 print(cities)

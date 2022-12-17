@@ -1,8 +1,3 @@
-# city1 = 'Cairo'
-# city2 = 'Giza'
-# city3 = 'Alex'
-# city4 = 'Mansoura'
-
 cities =  {
     'C': 'Cairo',
     'G': 'Giza',
@@ -10,5 +5,12 @@ cities =  {
     'M': 'Mansoura',
 }
 
-
 print(cities['G'])
+
+
+StatesToCapital = {}
+
+StatesToCapital["Texas"] = "Austin"
+StatesToCapital["New York"] = "Albany"
+
+print(StatesToCapital["Texas"])
