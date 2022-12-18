@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    int n = get_int ("How many bricks to start with? ");
+    int n = get_int ("How many bricks to do you want? ");
 
     for (int i = 0; i < n; i++)
     {   
