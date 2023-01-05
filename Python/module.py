@@ -21,11 +21,15 @@ def calculator ():
 
     elif (n == '**'):
         print (f'{x} ** {y} = {x ** y}')
+    elif (n == '//'):
+        print (f'{x} // {y} = {x // y}')
 
     i = input ("Would you like to run another calculation? (Y/N)" )
         
-    while (i == 'Y'):
+    if (i == 'Y' or i == 'y'):
         calculator()
+    else:
+        return
     
 
 # calculator()

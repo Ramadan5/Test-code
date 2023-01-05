@@ -41,7 +41,7 @@ void calculator ()
 
     char i = get_char ("Would you like another calculation? (Y/N) "); 
 
-    if (i == 'Y')
+    if (i == 'Y' || i == 'y')
         calculator ();
     else
         return;
