@@ -1,7 +1,7 @@
 def calculator ():
 
-    x = int (input ("What is the value of x? "))
-    y = int (input ("What is the value of y? "))
+    x = float (input ("What is the value of x? "))
+    y = float (input ("What is the value of y? "))
     n = input ("What would you like to do? ")
 
     if (n == '+'):
