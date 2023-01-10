@@ -10,7 +10,6 @@ def UOsearch(item, dataset):
         print(f'Found {item} at position {i + 1}!')
 
 
-
 def UOsearch2(item, dataset):
     item = int (input ("Which number do you want to search? "))
 
@@ -22,8 +21,17 @@ def UOsearch2(item, dataset):
     print("Not Found!")
 
 
+def UOsearch3(item, dataset):
+    item = int (input ("Which number do you want to search? "))
+    if item in dataset:
+        print("Found!")
+    else:
+        print("Not Found!")
+
+
 list = [8, 20, 6, 19, 56, 23, 87, 41, 49, 53]
 
 
 UOsearch(0, list)
 UOsearch2(0, list)
+UOsearch3(0, list)
